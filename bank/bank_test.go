@@ -56,9 +56,9 @@ var _ = Describe("Bank", func() {
 
 	Describe("when withdrawing an amount", func() {
 		var testsSuccess = []TestData{
-			{"must add balance with amount 25.00", 25.00, 25.00},
-			{"must add balance with amount 17.50", 17.50, 32.50},
-			{"must add balance with amount 10.58", 10.58, 39.42},
+			{"must reduce balance with amount 25.00", 25.00, 25.00},
+			{"must reduce balance with amount 17.50", 17.50, 32.50},
+			{"must reduce balance with amount 10.58", 10.58, 39.42},
 		}
 
 		for _, test := range testsSuccess {
